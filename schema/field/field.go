@@ -745,6 +745,12 @@ func (b *jsonBuilder) Immutable() *jsonBuilder {
 	return b
 }
 
+// Validate this field.
+func (b *jsonBuilder) Validate(fn func(in any) error) *jsonBuilder {
+	b.desc.Validators = append(b.desc.Validators, fn)
+	return b
+}
+
 // Comment sets the comment of the field.
 func (b *jsonBuilder) Comment(c string) *jsonBuilder {
 	b.desc.Comment = c

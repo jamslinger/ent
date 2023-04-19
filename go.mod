@@ -1,4 +1,4 @@
-module entgo.io/ent
+module https://github.com/jamslinger/ent
 
 go 1.20
 
