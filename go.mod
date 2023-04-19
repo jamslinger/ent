@@ -1,9 +1,10 @@
-module https://github.com/jamslinger/ent
+module github.com/jamslinger/ent
 
 go 1.20
 
 require (
 	ariga.io/atlas v0.10.0
+	entgo.io/ent v0.12.1
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/go-openapi/inflect v0.19.0
 	github.com/google/uuid v1.3.0
